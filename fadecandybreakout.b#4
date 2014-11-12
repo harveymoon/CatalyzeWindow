@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="10" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -71,6 +72,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -79,12 +81,30 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
@@ -111,6 +131,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
@@ -151,6 +173,7 @@ Done is the engine of more.</text>
 <wire x1="2.54" y1="-12.7" x2="95.25" y2="-12.7" width="1.4224" layer="20"/>
 <wire x1="95.25" y1="-12.7" x2="95.25" y2="104.14" width="1.4224" layer="20"/>
 <wire x1="95.25" y1="104.14" x2="2.54" y2="104.14" width="1.4224" layer="20"/>
+<dimension x1="2.54" y1="104.14" x2="95.25" y2="104.14" x3="48.895" y3="115.57" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -471,10 +494,10 @@ design rules under a new name.</description>
 <element name="U$8" library="OSTOQ035450" package="OSTOQ035450" value="OSTOQ035450" x="60.96" y="6.35"/>
 <element name="FAT_VCC" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="52.07" y="78.74"/>
 <element name="FAT_GND" library="SparkFun-Connectors" package="BANANA_CONN" value="" x="41.91" y="78.74"/>
-<element name="H1" library="holes" package="2,8" value="MOUNT-HOLE2.8" x="16.51" y="3.81"/>
-<element name="H2" library="holes" package="2,8" value="MOUNT-HOLE2.8" x="80.01" y="3.81"/>
-<element name="H3" library="holes" package="2,8" value="MOUNT-HOLE2.8" x="80.01" y="87.63"/>
-<element name="H4" library="holes" package="2,8" value="MOUNT-HOLE2.8" x="16.51" y="87.63"/>
+<element name="H1" library="holes" package="2,8" value="MOUNT-HOLE2.8" x="20" y="0"/>
+<element name="H2" library="holes" package="2,8" value="MOUNT-HOLE2.8" x="80" y="0"/>
+<element name="H3" library="holes" package="2,8" value="MOUNT-HOLE2.8" x="80" y="90"/>
+<element name="H4" library="holes" package="2,8" value="MOUNT-HOLE2.8" x="20" y="90"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -495,7 +518,7 @@ design rules under a new name.</description>
 <contactref element="U$6" pad="GND"/>
 <contactref element="U$7" pad="GND"/>
 <contactref element="U$8" pad="GND"/>
-<polygon width="0.6096" layer="1">
+<polygon width="0.6096" layer="1" isolate="0.6096">
 <vertex x="24.13" y="72.39"/>
 <vertex x="24.13" y="83.82"/>
 <vertex x="38.1" y="83.82"/>
@@ -531,7 +554,7 @@ design rules under a new name.</description>
 <contactref element="U$7" pad="VCC"/>
 <contactref element="U$8" pad="VCC"/>
 <wire x1="29.48" y1="39.38" x2="29.21" y2="39.65" width="1.27" layer="1"/>
-<polygon width="2.54" layer="1">
+<polygon width="2.54" layer="1" isolate="0.6096">
 <vertex x="27.94" y="78.74"/>
 <vertex x="27.94" y="12.7"/>
 <vertex x="59.69" y="12.7"/>
